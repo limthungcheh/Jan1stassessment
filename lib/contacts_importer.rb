@@ -15,5 +15,5 @@ module ContactsImporter
   end
 end
 
-contacts = ContactsImporter.new
-p contact.import
+
+

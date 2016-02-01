@@ -1,3 +1,5 @@
+#require_relative '../../config/application'
+
 class Printer
 	def initialize
 	end
@@ -6,3 +8,5 @@ class Printer
 		puts "I'm a demo printer"
 	end
 end
+
+p Printer.print_printer_messages

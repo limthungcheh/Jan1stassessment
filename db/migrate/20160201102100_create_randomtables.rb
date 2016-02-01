@@ -1,4 +1,5 @@
 require_relative '../../config/application'
+require_relative '../../lib/contacts_importer'
 
 class CreateRandomtables < ActiveRecord::Migration
   def change

@@ -1,5 +1,5 @@
 require_relative '../../config/application'
-
+require_relative
 class Task < ActiveRecord::Base
 	def initialize
 	end
@@ -8,3 +8,5 @@ class Task < ActiveRecord::Base
 		1
 	end
 end
+
+p Task.demo_id
