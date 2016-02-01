@@ -1,4 +1,5 @@
-require_relative '../db/migrate/20160201102100_create_randomtables.rb'
+require_relative '../config/application.rb'
+require_relative'../app/models/demo_models.rb'
 require 'faker'
 require 'date'
 
@@ -9,12 +10,9 @@ module ContactsImporter
     random_month = Random.new.rand(1..12)
     random_day = Random.new.rand(1..28)
     random_date = "#{Date.new(random_year,random_month,random_day)}"
-    contacts = Contact.create!
-    (name: Faker::Name.name,
-    birthday:random_date,
-    phone: Faker::PhoneNumber.phone_number
-    )
+    contacts = Contact.create!(name: Faker::Name.name,birthday:random_date,phone: Faker::PhoneNumber.phone_number)
     end
   end
 end
+
 
