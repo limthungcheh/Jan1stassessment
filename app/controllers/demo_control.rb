@@ -1,3 +1,5 @@
+
+
 class Controller
 	def initialize
 		@value = Task.demo_id

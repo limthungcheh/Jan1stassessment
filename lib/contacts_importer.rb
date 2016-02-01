@@ -1,5 +1,5 @@
-require_relative '../config/application.rb'
-require_relative'../app/models/demo_models.rb'
+require_relative '../config/application'
+require_relative'../app/models/demo_models'
 require 'faker'
 require 'date'
 
@@ -15,4 +15,5 @@ module ContactsImporter
   end
 end
 
-
+contacts = ContactsImporter.new
+p contact.import
